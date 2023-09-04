@@ -22,7 +22,6 @@ spring:
         preferIpAddress: true
         instanceId: ${spring.application.name}:${server.address}:${server.port}
         port: ${server.port}
-        #healthCheckUrl: http://host.docker.internal:8091/db/actuator/health
-        healthCheckIp: host.docker.internal
-        healthCheckPath: /db/actuator/health
+        healthCheckUrl: http://192.168.29.148:8091/db/actuator/health
+        #healthCheckPath: /db/actuator/health
         healthCheckInterval: 1s
